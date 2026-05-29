@@ -7,14 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'ob-navy': '#20365A',
-        'ob-blue': '#1188FF',
-        'ob-bg': '#F7F8FA',
+        'ob-navy': '#26334A',
+        'ob-blue': '#0084FF',
+        'ob-bg': '#F9FAFB',
         'ob-text': '#18233D',
-        'ob-green': '#3AD17D',
+        'ob-green': '#10B981',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
+        mono: ['"Space Mono"', 'monospace'],
       },
     },
   },
