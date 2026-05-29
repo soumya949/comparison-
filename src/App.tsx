@@ -12,7 +12,7 @@ function App() {
     <div className="min-h-screen bg-ob-bg text-ob-text font-inter selection:bg-ob-blue selection:text-white overflow-x-hidden scroll-smooth">
       {/* Top Banner */}
       <div className="w-full bg-[#1C2333] text-white text-xs sm:text-sm font-medium text-center py-2.5 px-4 z-[60] relative">
-        OpenBox AI and Mastra Bring Built-In Runtime Governance to Your Agents. <a href="#" className="underline font-bold hover:text-blue-300">Read More</a>
+        OpenBox AI and Mastra Bring Built-In Runtime Governance to TypeScript Agents. Read More. <a href="#" className="underline font-bold hover:text-blue-300">Read More</a>
       </div>
 
       {/* Navigation */}
