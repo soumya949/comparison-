@@ -79,19 +79,21 @@ const Footer = () => {
 
         </div>
 
-        {/* Compliance Badges */}
-        <div className="mb-12">
-          <h4 className="text-[13px] font-bold text-slate-800 mb-5">Compliance</h4>
-          <div className="flex flex-wrap gap-3">
-            {['EU AI ACT', 'UAE COMPLIANT', 'MAS COMPLIANT', 'NIST COMPLIANT', 'ISO 42001', 'ISO 27001', 'SDAIA COMPLIANT'].map((badge) => (
-              <div key={badge} className="w-12 h-12 rounded-full border-2 border-[#1C2333] flex items-center justify-center relative overflow-hidden group">
-                 {/* Internal jagged border effect simulated via SVG */}
-                 <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full text-[#1C2333] opacity-80 p-1">
-                    <polygon points="50,2 60,10 73,8 80,18 92,20 95,32 100,42 95,53 98,65 88,72 85,84 73,88 65,98 52,95 40,100 30,90 18,92 12,80 0,75 5,63 0,50 8,40 5,28 15,20 25,10 38,12" fill="none" stroke="currentColor" strokeWidth="4"/>
-                 </svg>
-                 <span className="text-[6px] font-bold text-[#1C2333] leading-none text-center px-1 z-10">{badge}</span>
-              </div>
-            ))}
+        {/* Compliance Badges (right-aligned like official site) */}
+        <div className="mb-12 flex md:justify-end">
+          <div className="text-right">
+            <h4 className="text-[13px] font-bold text-slate-800 mb-5">Compliance</h4>
+            <div className="flex flex-wrap justify-end gap-3">
+              {['EU AI ACT', 'UAE COMPLIANT', 'MAS COMPLIANT', 'NIST COMPLIANT', 'ISO 42001', 'ISO 27001', 'SDAIA COMPLIANT'].map((badge) => (
+                <div key={badge} className="w-12 h-12 rounded-full border-2 border-[#1C2333] flex items-center justify-center relative overflow-hidden group">
+                   {/* Internal jagged border effect simulated via SVG */}
+                   <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full text-[#1C2333] opacity-80 p-1">
+                      <polygon points="50,2 60,10 73,8 80,18 92,20 95,32 100,42 95,53 98,65 88,72 85,84 73,88 65,98 52,95 40,100 30,90 18,92 12,80 0,75 5,63 0,50 8,40 5,28 15,20 25,10 38,12" fill="none" stroke="currentColor" strokeWidth="4"/>
+                   </svg>
+                   <span className="text-[6px] font-bold text-[#1C2333] leading-none text-center px-1 z-10">{badge}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
